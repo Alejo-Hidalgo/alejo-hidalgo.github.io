@@ -1,0 +1,26 @@
+body {
+    background-color: #fbffd2f6;
+    color: #071031;
+}
+
+li {
+    float: center;
+}
+
+figure {
+    float: right;
+    marg
+}
+
+div {
+    margin: 20px;
+}
+
+.texto {
+    text-align: left;
+    list-style-position: inside;
+    font-size: 20px;
+}
+
+
+/* #040b1a fondo oscuro, fuente clara #d6cdcde1
