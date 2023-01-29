@@ -1,15 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;800&display=swap');
+
+/* font-family: 'Unbounded', cursive; */
+
 body {
     background-color: #fbffd2f6;
     color: #071031;
+    font-family: 'Unbounded', cursive;
+    font-weight: 400;
+    font-size: 24px;
 }
 
-li {
+h1 {
     float: center;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    font-weight: 800;
 }
 
-figure {
+.imagen {
     float: right;
-    marg
+    padding: 5px;
+    border: 20px;
+    border-color: #010111;
+    margin: 10px;
 }
 
 div {
@@ -20,6 +34,37 @@ div {
     text-align: left;
     list-style-position: inside;
     font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #111111;
+}
+
+header i {
+    font-size: 20px;
+    margin: 0px 18px;
+    align-self: center;
+    float: right;
 }
 
 
