@@ -18,6 +18,24 @@ h1 {
     font-weight: 800;
 }
 
+#claroscuro {
+    border: none;
+    color: #071031;
+    background-color: darkgray;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    float: right;
+    align-items: center;
+}
+
+header button i {
+    margin: 3px;
+}
+
 .imagen {
     float: right;
     padding: 5px;
