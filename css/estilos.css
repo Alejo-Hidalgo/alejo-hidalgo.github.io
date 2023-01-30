@@ -18,7 +18,13 @@ h1 {
     font-weight: 800;
 }
 
+h3 {
+    font-size: larger;
+    border-block-color: black;
+}
+
 #claroscuro {
+    border-radius: 5px;
     border: none;
     color: #071031;
     background-color: darkgray;
