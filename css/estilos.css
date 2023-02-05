@@ -1,13 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;800&display=swap');
-
-/* font-family: 'Unbounded', cursive; */
-
 body {
     background-color: #fbffd2f6;
     color: #071031;
     font-family: 'Unbounded', cursive;
     font-weight: 400;
     font-size: 14px;
+    transition: .3s ease all;
+}
+
+body.dark {
+    background-color: #010111;
+    color: #fbffd2f6;
+}
+
+
+/*Switch*/
+
+.switch {
+    background: #101424;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba+(0, 0, 0, .2);
+}
+
+.switch.active {
+    background: #f2f7c4f6;
+    color: #010111;
+}
+
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
 }
 
 h1 {
@@ -16,6 +66,8 @@ h1 {
     text-align: center;
     font-family: 'Unbounded', cursive;
     font-weight: 800;
+    padding: 0;
+    margin: 0;
 }
 
 h3 {
@@ -24,26 +76,6 @@ h3 {
     font-size: 30px;
     font-family: 'Unbounded', cursive;
     font-weight: 800;
-}
-
-#claroscuro {
-    border-radius: 5px;
-    border: none;
-    color: #071031;
-    background-color: darkgray;
-    padding: 15px 15px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 4px;
-    cursor: pointer;
-    align-items: center;
-    border-color: #333333;
-    float: right;
-}
-
-header button i {
-    margin: 3px;
 }
 
 .imagen {
@@ -69,6 +101,7 @@ header nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #333333;
+    align-items: center;
 }
 
 header nav ul li {
@@ -87,25 +120,25 @@ header nav ul li a:hover {
     background-color: #111111;
 }
 
-
-/* boton claroscuto */
-
-header i {
-    font-size: 20px;
-    margin: 0px 0px 0px 0px;
-    align-self: center;
-    float: right;
-}
-
-@media (max-width:700px) {
-    #claroscuro {
-        display: none;
+@media (max-width: 700px) {
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+        width: 200px;
+    }
+    header nav ul li {
+        float: center;
     }
     h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
-    h3 {
-        text-align: center;
-        font-size: 25px;
+    h2 {
+        font-size: large;
+    }
+    .switch {
+        display: none;
     }
 }

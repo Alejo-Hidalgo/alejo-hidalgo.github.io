@@ -9,22 +9,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" type="text/css" href="fontawesome-free-6.2.1-web/css/all.css">
-
 </head>
 
 <body>
     <header class="container text-center">
 
-        <button id="claroscuro" type="button"><i class="fa-solid fa-moon "></i>
-            <i class="fa-solid fa-sun"></i></button>
+
+        <br>
         <h1>CURRICULUM VITAE</h1>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="col"><a href="#infoPersonal">Información personal</a></li>
-                <li class="col"><a href="#experiencia">Experiencia</a></li>
-                <li class="col"><a href="#habilidades">Habilidades</a></li>
-            </ul>
-        </nav>
+        <section>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="col"><a href="#infoPersonal">Información personal</a></li>
+                    <li class="col"><a href="#experiencia">Experiencia</a></li>
+                    <li class="col"><a href="#habilidades">Habilidades</a></li>
+                    <li class="col-2"><button class="switch" id="switch">
+                        <span><i class="fa-solid fa-sun"></i></span>
+                        <span><i class="fa-solid fa-moon "></i></span>
+                    </button></li>
+                </ul>
+
+            </nav>
+        </section>
     </header>
 
     <div id="infoPersonal" class="texto container text-left col-12">
@@ -101,8 +107,10 @@
             </dl>
         </P>
     </div>
+    <script src="js/funciones.js"></script>
+
     <footer>
-        <a href="mailto:someone@example.com">Enviar email</a>
+        <a href="mailto:someone@example.com ">Enviar email</a>
         <!-- para mandar un mail -->
     </footer>
 
