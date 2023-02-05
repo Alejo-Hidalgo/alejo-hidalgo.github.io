@@ -7,7 +7,7 @@ body {
     color: #071031;
     font-family: 'Unbounded', cursive;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 14px;
 }
 
 h1 {
@@ -21,6 +21,9 @@ h1 {
 h3 {
     font-size: larger;
     border-block-color: black;
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+    font-weight: 800;
 }
 
 #claroscuro {
@@ -34,8 +37,9 @@ h3 {
     font-size: 16px;
     margin: 4px 4px;
     cursor: pointer;
-    float: right;
     align-items: center;
+    border-color: #333333;
+    float: right;
 }
 
 header button i {
@@ -50,15 +54,14 @@ header button i {
     margin: 10px;
 }
 
-div {
-    margin: 20px;
-}
-
 .texto {
     text-align: left;
     list-style-position: inside;
     font-size: 20px;
 }
+
+
+/*Navegador(menu) */
 
 header nav ul {
     list-style-type: none;
@@ -84,12 +87,25 @@ header nav ul li a:hover {
     background-color: #111111;
 }
 
+
+/* boton claroscuto */
+
 header i {
     font-size: 20px;
-    margin: 0px 18px;
+    margin: 0px 0px 0px 0px;
     align-self: center;
     float: right;
 }
 
-
-/* #040b1a fondo oscuro, fuente clara #d6cdcde1
+@media (max-width:700px) {
+    #claroscuro {
+        display: none;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+}
