@@ -13,6 +13,18 @@ body.dark {
     color: #fbffd2f6;
 }
 
+#infoPersonal {
+    display: block;
+}
+
+#experiencia {
+    display: none;
+}
+
+#habilidades {
+    display: none;
+}
+
 
 /*Switch*/
 

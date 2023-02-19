@@ -13,37 +13,28 @@
 
 <body>
     <header class="container text-center">
-
-
         <br>
         <h1>CURRICULUM VITAE</h1>
         <section>
             <nav>
                 <ul class="nav justify-content-center">
-                    <li class="col"><a href="#infoPersonal">Información personal</a></li>
-                    <li class="col"><a href="#experiencia">Experiencia</a></li>
-                    <li class="col"><a href="#habilidades">Habilidades</a></li>
+                    <li class="col"><a href="#infoPersonal" id="info">Información personal</a></li>
+                    <li class="col"><a href="#experiencia" id="exp">Experiencia</a></li>
+                    <li class="col"><a href="#habilidades" id="hab">Habilidades</a></li>
                     <li class="col-2"><button class="switch" id="switch">
                         <span><i class="fa-solid fa-sun"></i></span>
                         <span><i class="fa-solid fa-moon "></i></span>
                     </button></li>
                 </ul>
-
             </nav>
         </section>
     </header>
 
-    <div id="infoPersonal" class="texto container text-left col-12">
-        <p>
-            <figure class="imagen col-2">
-                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Foto carnet personal para el CV.">
-            </figure>
-            <h3>Información personal</h3>
-            <p class="col-10">
-                Nombre:<br> Apellido: <br> Mail: <br> direccion: <br> Numero de documento: <br> numero de cuil: <br> telefono: <br>
-            </p>
+    <div id="infoPersonal" class="container text-left col-12">
+        <div id="informacion" class="texto">
 
-        </p>
+        </div>
+
 
     </div>
     <div id="experiencia" class="texto container text-left col-12">
@@ -107,13 +98,13 @@
             </dl>
         </P>
     </div>
-    <script src="js/funciones.js"></script>
 
-    <footer>
+    <footer container>
         <a href="mailto:someone@example.com ">Enviar email</a>
         <!-- para mandar un mail -->
     </footer>
 
+    <script src="js/funciones.js"></script>
 </body>
 
 </html>
