@@ -46,7 +46,8 @@ aHab.addEventListener('click', () => {
 
 /* json desde pagina */
 
-var informacion = document.querySelector('#informacion')
+const informacion = document.querySelector('#informacion')
+const enviarEmail = document.querySelector('#enviarEmail')
 
 function traer() {
     fetch('https://randomuser.me/api/')
@@ -55,15 +56,21 @@ function traer() {
             console.log(data.results['0'])
             informacion.innerHTML = `
             <h3>Información personal</h3>
-            <img src="${data.results[0].picture.large}"  width="150px" class= "imagen img-fluid rounded-circle" alt="Foto CV.">
+            
             <p>
-                Nombre: ${data.results[0].name.first}
-                <br> Apellido: ${data.results[0].name.last}
-                <br> Mail: ${data.results[0].email}
-                <br> Direccion:${data.results[0].location.street.name}  ${data.results[0].location.street.number}
-                <br> Numero de documento:${data.results[0].id.value}
-                <br> Telefono:${data.results[0].phone}
+                <ul>
+                    <li><img src="${data.results[0].picture.large}"  width="150px" class= "imagen img-fluid rounded-circle" alt="Foto CV."></li>
+                    <li>Nombre: ${data.results[0].name.first}</li>
+                    <li>Apellido: ${data.results[0].name.last}</li>
+                    <li>Mail: ${data.results[0].email}</li>
+                    <li>Direccion:${data.results[0].location.street.name}  ${data.results[0].location.street.number}</li>
+                    <li>Numero de documento:${data.results[0].id.value}</li>
+                    <li>Telefono:${data.results[0].phone}</li>   
+                </ul>
             </p>    
+            `
+            enviarEmail.innerHTML = `
+            <a href="mailto:${data.results[0].email} ">Enviar email</a>
             `
         })
 }
