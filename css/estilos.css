@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;800&display=swap');
 body {
+    width: 100%;
     background-color: #f0f1e4f6;
     color: #161d35;
     font-family: 'Unbounded', cursive;
